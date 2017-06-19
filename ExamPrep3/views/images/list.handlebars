@@ -1,0 +1,20 @@
+<form action="/images/tag" method="GET">
+  <input type="text" name="search">
+  <input type="submit" value="Search">
+</form>
+
+{{#each images}}
+    <div>
+        <img src="{{this.urlText}}">
+        <p>{{this.description}}</p>
+        <br>
+        <a><i>This image was added on {{this.dateCreated}}</i></a>
+        </br>
+        <form action="/images/edit/{{image._id}}">
+         <a href="/images/edit/{{image._id}}">Edit image</a>
+        </form>
+        <br></br>
+    </div>
+{{else}}
+    <h2>No images avalaible</h2>
+{{/each}}

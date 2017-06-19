@@ -1,0 +1,1 @@
+db.getCollection('rentings').update({}, {$set: {rentedOn: Date.now() }}, {multi: true} )

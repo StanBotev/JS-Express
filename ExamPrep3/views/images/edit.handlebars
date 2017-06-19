@@ -1,0 +1,10 @@
+<form class="center-form" action="/images/edit/{{image._id}}" method="POST">
+  <div class="form-group" >
+    <label for="image">Edit image</label>
+    <textarea class="input-field" type="text" name="image">{{image.urlText}}</textarea>
+  </div>
+
+  <div class="form-group">
+    <input class="form-btn btn btn-warning" type="submit" value="Save" />
+  </div>
+</form>

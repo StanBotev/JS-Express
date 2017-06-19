@@ -1,0 +1,18 @@
+{{#each threads}}
+    <div>
+      <h2>Thread title = {{this.title}}</h2>
+      <h2>Description = {{this.description}}</h2>
+      <form action="./addComment">
+        <button type="submit">Add Comment</button>
+      </form>
+        {{#each threads.comment}}
+          <h3>{{this.text}}</h3>
+          <h3>{{this.author}}</h3>
+          <h3>{{this.createDate}}</h3>
+            {{else}}
+              <h3>No comments in this thread</h3>
+        {{/each}}
+    </div>
+{{else}}
+    <h2>No threads avalaible</h2>
+{{/each}}

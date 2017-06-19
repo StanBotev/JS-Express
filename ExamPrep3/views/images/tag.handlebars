@@ -1,0 +1,12 @@
+{{#each images}}
+    <div>
+        <img src="{{this.urlText}}">
+        <p>{{this.description}}</p>
+        <br>
+        <a><i>This image was added on {{this.dateCreated}}</i></a>
+        </br>
+        <br></br>
+    </div>
+{{else}}
+    <h2>No images avalaible</h2>
+{{/each}}

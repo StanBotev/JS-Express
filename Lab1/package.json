@@ -1,0 +1,12 @@
+{
+  "name": "exercise1",
+  "version": "1.0.0",
+  "description": "first-part-lab",
+  "main": "index.js",
+  "scripts": {},
+  "author": "stan",
+  "license": "ISC",
+  "devDependencies": {
+    "standard": "^10.0.2"
+  }
+}

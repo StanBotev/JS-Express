@@ -1,0 +1,11 @@
+{{#each tweets}}
+    <div>
+        <p>{{creator.username}} wrote:</p>
+        <p>{{message}}</p>
+        <br>
+        <a><i>This post was created on {{creationDate}}</i></a>
+        </br>
+    </div>
+{{else}}
+    <h2>No tweets avalaible</h2>
+{{/each}}
